@@ -69,7 +69,7 @@ function App() {
     console.log("The path state is", path);
 
     return (
-        <div className="App">1111111111111111111111111111111111111111111111111
+        <div className="App">
             <LoadScript
                 id="script-loader"
                 googleMapsApiKey="AIzaSyCKEfoOIPz8l_6A8BByD3b3-ncwza8TNiA"
