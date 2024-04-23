@@ -36,6 +36,8 @@ function App() {
             })
                 .then(response => {
                     console.log('Polygon updated successfully:', response);
+                    let addresses = response.data.results.map(item => item.addressLine1).join('\n');
+                    alert(addresses);
                 })
                 .catch(error => {
                     console.error('Error updating polygon:', error);
