@@ -38,7 +38,7 @@ function App() {
                 timeout: 10000  // Timeout after 5 seconds
             })
                 .then(response => {
-                    console.log('Polygon updated successfully:', response.data);
+                    console.log('Polygon updated successfully:', response);
                 })
                 .catch(error => {
                     console.error('Error updating polygon:', error);
