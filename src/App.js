@@ -19,7 +19,7 @@ function App() {
                 .getArray()
                 .map(latLng => `${latLng.lat()},${latLng.lng()}`).join(',');
             setPath(nextPath);
-            axios.post('http://20.92.124.226:8081/address/rest/address/polygonSearch', {
+            axios.post('https://padonko.com/address/rest/address/polygonSearch', {
                 "arf": "GNAF",
                 "geocodes": "LatLong.Latitude+Longitude+Reliability",
                 "polygon": nextPath,
